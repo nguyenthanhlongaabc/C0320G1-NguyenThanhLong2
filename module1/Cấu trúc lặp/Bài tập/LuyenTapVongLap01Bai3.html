@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let result = "";
+let a = 0;
+let b = 1;
+let c;
+document.write(a + ",");
+document.write(b + ",");
+for (let i = 1; i <= 20; i++ ){
+    c = a + b;
+    a = b;
+    b = c;
+    result = result + c;
+    if (i<20){
+        result = result + ", ";
+    }
+}
+document.write(result);
+</script>
+
+</body>
+</html>

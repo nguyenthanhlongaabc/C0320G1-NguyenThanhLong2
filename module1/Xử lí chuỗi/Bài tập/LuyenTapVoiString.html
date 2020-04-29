@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = "Tôi yêu ngôn ngữ lập trình Javascript";
+    let count = 0;
+    for (i=0;i<a.length;i++){
+        if (a[i] === "a"){
+            count = count +1;
+        }
+    }
+    document.write("Số kí tự chữ a : " + count + "<br>");
+    let b = a.split(" ");
+    let c = b.length;
+    document.write("Độ dài từ trong mảng : " + c + "<br>");
+    let d = a.replace(/javascript/i,"Typerscript");
+    document.write(d);
+
+</script>
+
+</body>
+</html>

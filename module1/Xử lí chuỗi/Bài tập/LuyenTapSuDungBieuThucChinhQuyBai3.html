@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = "nguyen thanh long";
+    let b = /^[aeiouy]$/;
+    let c = /^[bcdghklmnpqrstvx]$/;
+    let count = 0;
+    for (i=0;i<a.length;i++){
+        if (b.test(a[i])){
+            count = count + 1;
+        }
+    }
+    let count1 = 0;
+    for (i=0;i<a.length;i++){
+        if (c.test(a[i])){
+            count1 = count1 + 1
+        }
+    }
+    document.write("Số kí tự nguyên âm : " + count + "<br>" );
+    document.write("Số kí tự phụ âm : " + count1);
+</script>
+</body>
+</html>

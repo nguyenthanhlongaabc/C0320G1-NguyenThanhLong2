@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhập vào a"));
+    let b = parseInt(prompt("Nhập vào b"));
+    let c = parseInt(prompt("Nhập vào c"));
+    let d = b*b-4*a*c;
+    let e = -b/(2*a);
+    let f = (-b+Math.sqrt(d))/(2*a);
+    let g = (-b-Math.sqrt(d))/(2*a);
+    switch (true) {
+        case (d<0):
+            alert("Phương Trình vô nghiệm")
+            break;
+        case (d==0):
+            alert("Phương Trình có nghiệm kép x1 = x2 = " + e);
+            break;
+        case (d>0):
+            alert("Phương trình có nghiệm x1 =" +f);
+            alert("Phương trình có nghiệm x2 =" +g);
+
+
+    }
+</script>
+
+</body>
+</html>

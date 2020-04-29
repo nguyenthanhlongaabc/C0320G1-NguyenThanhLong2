@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let thePresentTime = new Date();
+    let birthDay = new Date(1996,1,9);
+    let year = thePresentTime.getFullYear()-birthDay.getFullYear();
+    let month = year*12;
+    let day = month*30;
+    let hours = day*24;
+    let minutes = hours*60;
+    let seconds = minutes*60;
+    document.write("1.Tôi đã sống " + year + " năm " + "<br>" +
+        "2.Tôi đã sống " + month + " tháng " + "<br>" +
+        "3.Tôi đã sống " + day + " ngày " + "<br>" +
+        "4.Tôi đã sống " + hours + " giờ " + "<br>" +
+        "5.Tôi đã sống " + minutes + " phút " + "<br>" +
+        "6.Tôi đã sống " + seconds + " giây ");
+
+</script>
+
+</body>
+</html>

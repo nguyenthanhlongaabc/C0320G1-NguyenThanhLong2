@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a =/^\([0-9]{2}\)\-\(0[0-9]{9}\)$/;
+    function kiemTra(string) {
+        if (a.test(string)){
+            return "Số điện thoại bạn nhập đúng";
+        }else {
+            return "Số điện thoại bạn nhập sai";
+        }
+
+    }
+    alert(kiemTra(prompt("Nhập vào một số")));
+</script>
+
+</body>
+</html>

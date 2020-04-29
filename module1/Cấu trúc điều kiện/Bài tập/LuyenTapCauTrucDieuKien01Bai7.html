@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Số phút gọi"));
+    let b ;
+    if (a <= 50){
+        b = 25000 + 600*a;
+        document.write("Cước điện thoại là :" + b);
+    }else if (a<=200){
+        b = 25000 + 600*50 + 400*(a-50);
+        document.write("Cước điện thoại là :" + b);
+    }else {
+        b = 25000 + 600*50 + 400*150 + 200*(a-200);
+        document.write("Cước điện thoại là :" + b);
+    }
+</script>
+
+</body>
+</html>

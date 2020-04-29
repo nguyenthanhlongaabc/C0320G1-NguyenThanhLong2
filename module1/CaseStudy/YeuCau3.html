@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let check = false;
+    let tempName ="";
+    let name = prompt("Nhập vào tên");
+    name = name.trim().toLowerCase();
+    for (let i = 0 ;i<name.length;i++){
+        if (name.charAt(i) === " " && name.charAt(i+1) === " "){
+            continue;
+        }
+        if (i === 0||name.charAt(i-1)===" "){
+            tempName += name.charAt(i).toUpperCase();
+            continue;
+        }
+        tempName += name.charAt(i);
+    }
+    name=tempName;
+
+    do {
+        let cmnd = prompt("Nhập vào số cmnd");
+        if (!isNaN(cmnd)){
+            cmnd = Number.parseFloat(cmnd);
+        }
+        if (!Number.isInteger(cmnd)){
+            alert("cmnd không hợp lệ");
+            continue;
+        }
+        if (cmnd<10000000&&cmnd>999999999){
+            alert("cmnd không hợp lệ");
+            continue;
+        }
+        check=true;
+    }while (!check);
+    check = false;
+    let birthday;
+    let regexBirthday;
+    do {
+        birthday = prompt("Nhập vào ngày sinh");
+        regexBirthday = /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
+        if (regexBirthday.test(birthday)){
+            check = true;
+        }else {
+            alert("Ngày sinh không đúng định dạng, vui lòng nhập lại");
+        }
+    }while (!check);
+    check = false;
+    do {
+        let countAt = 0;
+        let countDoc = 0;
+        let email = prompt("Nhập vào email");
+        for (let i=0;i<email.length;i++){
+            if (email.charAt(i)==="@"){
+                countAt++;
+                for (j=i+1;j<email.length;j++){
+                    if (email.charAt(j)==="."){
+                        countDoc++;
+                    }
+                }
+            }
+        }
+        if (countAt!==1||countDoc<1){
+            alert("Email bạn nhập không đúng");
+        }else {
+            check = true;
+        }
+    }while (!check);
+    check = false;
+
+    let tempAddress ="";
+    let address = prompt("Nhập vào địa chỉ");
+    address = address.trim().toLowerCase();
+    for (let i = 0 ;i<address.length;i++){
+        if (address.charAt(i) === " " && address.charAt(i+1) === " "){
+            continue;
+        }
+        if (i === 0||address.charAt(i-1)===" "){
+            tempAddress += address.charAt(i).toUpperCase();
+            continue;
+        }
+        tempAddress += address.charAt(i);
+    }
+    address=tempAddress;
+
+    let tempTypecustomer ="";
+    let typecustomer = prompt("Nhập vào loại khách hàng (Diamond, Platinum, Gold, Silver, Member)");
+    typecustomer = typecustomer.trim().toLowerCase();
+    for (let i = 0 ;i<typecustomer.length;i++){
+        if (typecustomer.charAt(i) === " " && typecustomer.charAt(i+1) === " "){
+            continue;
+        }
+        if (i === 0||typecustomer.charAt(i-1)===" "){
+            tempTypecustomer += typecustomer.charAt(i).toUpperCase();
+            continue;
+        }
+        tempTypecustomer += typecustomer.charAt(i);
+    }
+    typecustomer=tempTypecustomer;
+
+    let discount = parseInt(prompt("Nhập vào mã giảm giá"));
+    let check = false;
+    let regexQuantityIncluded = /^[0-9]{1,}$/;
+    let quantityIncluded;
+    do {
+        quantityIncluded = prompt("Nhập vào số lượng đi kèm");
+        if (regexQuantityIncluded.test(quantityIncluded)){
+            check = true;
+        }else {
+            alert("Số người đi kèm không đúng định dạng, vui lòng nhập lại");
+        }
+    }while (!check);
+    let rentDays;
+    let check = false;
+    let regexRentDay = /^[1-9]{1,}$/
+    do {
+        rentDays = parseInt(prompt("Nhập vào số ngày thuê"));
+        if (regexRentDay.test(rentDays)){
+            check = true;
+        }else {
+            alert("Số ngày thuê không đúng định dạng, vui lòng nhập lại");
+        }
+    }while (!check);
+    let check = false;
+    let serviceType = prompt("Nhập vào loại dịch vụ (Villa, House, Room)");
+    let roomType = prompt("Nhập vào loại phòng thuê (Vip, Business, Normal)");
+</script>
+
+</body>
+</html>

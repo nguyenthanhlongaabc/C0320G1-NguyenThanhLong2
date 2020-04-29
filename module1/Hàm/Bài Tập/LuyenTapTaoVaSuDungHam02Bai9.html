@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = ["a","a","b","b","b","b","c"];
+    function array(a) {
+        let count = 0;
+        for (i=0;i<arr.length;i++){
+            if (a == arr[i]){
+                count = count +1;
+            }else {
+                count = -1;
+            }
+        }
+        return count;
+    }
+    let b = prompt("Nhập vào một kí tự");
+    document.write(array(b));
+</script>
+
+</body>
+</html>

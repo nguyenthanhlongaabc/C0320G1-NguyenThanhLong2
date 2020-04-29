@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = ["0","1","2","3","4","5","6","7","8","9"];
+    function kiemtra(so) {
+        if (number.indexOf(so) !== -1){
+            return true;
+        }else {
+            return false;
+        }
+    }
+    let b = prompt("Nhập vào một số");
+    let result = kiemtra(b);
+    alert(result);
+</script>
+
+</body>
+</html>

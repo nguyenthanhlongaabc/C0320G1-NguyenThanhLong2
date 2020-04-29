@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhập vào thu nhập cá nhân"));
+    let b ;
+    if (a>0&&a<=5){
+        b = a*5/100;
+        alert("Thuế thu nhập cá nhân là : " + b);
+    }else if (a<=10){
+        b = a*10/100;
+        alert("Thuế thu nhập cá nhân là : " + b);
+    }else if (a<=18){
+        b = a*15/100;
+        alert("Thuế thu nhập cá nhân là : " + b);
+    }else if (a<=32){
+        b = a*20/100;
+        alert("Thuế thu nhập cá nhân là : " + b);
+    }else if (a<=52){
+        b = a*25/100;
+        alert("Thuế thu nhập cá nhân là : " + b);
+    }else if (a<=80){
+        b = a*30/100;
+        alert("Thuế thu nhập cá nhân là : " + b);
+    }else {
+        b = a*35/100;
+        alert("Thuế thu nhập cá nhân là : " +b);
+    }
+</script>
+
+</body>
+</html>

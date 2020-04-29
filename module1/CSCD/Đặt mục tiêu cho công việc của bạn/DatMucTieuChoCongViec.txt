@@ -1,0 +1,46 @@
+Luyện tập 1:
+- Tăng năng suất làm việc 5% vào tuần tới
+	+ S: 2
+	+ M: 3
+	+ A: 3
+	+ R: 3
+	+ T: 4
+- Tặng cho vợ một chiếc máy tính mới nếu trúng xổ số
+	+ S: 2
+	+ M: 2
+	+ A: 1
+	+ R: 1
+	+ T: 1
+- Tiết kiệm đủ tiền để mua một chiếc máy tính mới
+	+ S: 2
+	+ M: 2
+	+ A: 2
+	+ R: 2
+	+ T: 1
+- Tuần tới sẽ dọn dẹp lại khu vườn
+	+ S: 2
+	+ M: 2
+	+ A: 3
+	+ R: 3
+	+ T: 2
+- Tự thành lập một công ty riêng cho mình
+	+ S: 2
+	+ M: 2
+	+ A: 1
+	+ R: 1
+	+ T: 1
+
+
+
+	
+Luyện tập 2:
+- Tiết kiệm 40tr để mua một chiếc xe máy trong vòng 12 tháng tới.  
+	+ S: 4
+	+ M: 4
+	+ A: 3
+	+ R: 3
+	+ T: 4
+Luyện tập 3:
+Hoàn thành bài tập hàm lúc 23h ngày 17/4/2020
+Hoàn thành case study task 3 trong ngày 18/4/2020
+Hoàn thành module1 trong 2 tuần tới.

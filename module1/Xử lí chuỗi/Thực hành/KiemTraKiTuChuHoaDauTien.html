@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemTraChuoi(string){
+    let a = /^[A-Z]/;
+        if (a.test(string)){
+            return "Chuỗi bạn nhập có kí tự đầu tiên viết hoa";
+        }else {
+            return "Chuỗi bạn nhập có kí tự đầu tiên không viết hoa";
+        }
+    }
+    let c = prompt("Nhập vào một chuỗi");
+    let result = kiemTraChuoi()
+    alert(result);
+</script>
+
+</body>
+</html>

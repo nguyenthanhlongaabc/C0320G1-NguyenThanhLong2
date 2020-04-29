@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = /^[a-z_0-9]{6,}$/;
+    function kiemTraTaiKhoan(string) {
+        if (a.test(string)){
+            return "Tên tài khoản hợp lệ";
+        }else {
+            return "Tên tài khoản không hợp lệ";
+        }
+    }
+    let b = prompt("Nhập vào tên tài khoản");
+    let result = kiemTraTaiKhoan(b);
+    alert(result);
+
+</script>
+
+</body>
+</html>

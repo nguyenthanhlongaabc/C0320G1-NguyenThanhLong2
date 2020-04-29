@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = /^[0-9]{5}\-[0-9]{4}$/;
+    function kiemTra(string) {
+        if (a.test(string)){
+            return "Mã đúng"
+        }else {
+            return "Mã sai"
+        }
+
+    }
+    alert(kiemTra(prompt("Nhập mã quốc gia Mỹ")));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPalindrome(s) {
+        if (s<2){
+            return true;
+        }
+        if (s[0]==s[s.length-1]){
+           return isPalindrome(s.substr(1,s.length-2));
+        }else {
+            return false;
+        }
+    }
+    let a = "abccba";
+    let b = "abcdcba";
+    let c = "abcbca";
+    document.write(isPalindrome(a));
+    document.write("<br>");
+    document.write(isPalindrome(b));
+    document.write("<br>");
+    document.write(isPalindrome(c));
+</script>
+
+</body>
+</html>

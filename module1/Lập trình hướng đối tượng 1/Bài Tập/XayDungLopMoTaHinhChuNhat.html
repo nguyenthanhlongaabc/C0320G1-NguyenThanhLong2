@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1000" height="700" style="border: solid 1px blue"></canvas>
+<script>
+    let Rectangle = function (length,width) {
+        this.length = length;
+        this.width = width;
+        this.getPerimeter = function () {
+            return (this.length+this.width)*2;
+        }
+        this.getArea = function () {
+            return this.length*this.width;
+        }
+        this.setLength = function (length) {
+            this.length=length;
+        }
+        this.setWidth = function (width) {
+            this.width = width;
+        }
+        this.drawToScreen = function () {
+            let can = document.getElementById("myCanvas");
+            let ctx = can.getContext("2d");
+            ctx.fillRect(0,0,this.width,this.length);
+        }
+    }
+    let rectangle = new Rectangle(200,100);
+    getPerimeter1 = rectangle.getPerimeter();
+    getArea1 = rectangle.getArea();
+    console.log("Chu vi : " + getPerimeter1 + " ;Diện tích : " + getArea1);
+    rectangle.drawToScreen();
+
+</script>
+
+</body>
+</html>

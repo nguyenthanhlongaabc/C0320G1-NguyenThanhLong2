@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = ["0386781151","0984585476","0904323333","0914241266"];
+    let a = /^038[0-9]{7}$/;
+    let b = /^098[0-9]{7}$/;
+    function kiemTra(numberPhone) {
+        if (a.test(numberPhone)||b.test(numberPhone)){
+            return numberPhone + " : Viettel";
+        }else {
+            return numberPhone + " : Không phải Viettel";
+        }
+
+    }
+    document.write(kiemTra(arr[0]) + "<br>");
+    document.write(kiemTra(arr[1]) + "<br>");
+    document.write(kiemTra(arr[2]) + "<br>");
+    document.write(kiemTra(arr[3]));
+</script>
+
+</body>
+</html>

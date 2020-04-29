@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(DoC) {
+            this.DoC = DoC;
+        }
+        getDoF() {
+            return (9/5)*this.DoC+32;
+        }
+        getDoK() {
+            return this.DoC+273;
+        }
+    }
+    let doC = new Temperature(25);
+    let doF = doC.getDoF();
+    let doK = doC.getDoK();
+    alert("Độ F : " + doF + " ;Độ K : " + doK);
+</script>
+
+</body>
+</html>

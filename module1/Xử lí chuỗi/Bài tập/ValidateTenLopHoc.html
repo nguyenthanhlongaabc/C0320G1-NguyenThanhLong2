@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = /^[CAP][0-9]{4}[GHIKLM]$/;
+    function kiemTra(string) {
+        if (a.test(string)){
+            return "Tên lớp bạn nhập đúng";
+        }else {
+            return "Tên lớp bạn nhập sai";
+        }
+
+    }
+    let lop = prompt("nhập lên lớp");
+    let result = kiemTra(lop);
+    alert(result);
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="Den_Tat.gif" id="denTat" >
+<h2 id="result"> Bóng đèn đang tắt</h2>
+<button id="switch" onclick="turnOn__turnOff()">TurnOn/TurnOff</button>
+<script>
+    class SwitchButton {
+        constructor(status) {
+            this.status = status;
+        }
+        getStatus() {
+            return this.status;
+        }
+        setStatus(status) {
+            this.status = status;
+        }
+        turnOn_turnOff() {
+            this.status = !this.status;
+        }
+    }
+    class Light {
+        constructor(switchButton) {
+            this.switchButton = switchButton;
+        }
+        onLight(){
+            if (this.switchButton.getStatus() ===true){
+                document.getElementById("denTat").src = "Den_Sang.gif";
+                document.getElementById("result").innerHTML = "Bóng đèn đang bật";
+            }else {
+                document.getElementById("denTat").src = "Den_Tat.gif";
+                document.getElementById("result").innerHTML = "Bóng đèn đang tắt";
+            }
+        }
+    }
+    let switchButton = new SwitchButton(false);
+    let lamp = new Light(switchButton);
+    function turnOn__turnOff() {
+        switchButton.turnOn_turnOff()
+        lamp.onLight()
+    }
+</script>
+</body>
+</html>

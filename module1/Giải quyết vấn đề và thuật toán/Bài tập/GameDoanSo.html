@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Game Đoán Số từ 0-100</h2>
+<input type="text" id="number">
+<button onclick="timKiem()">Tìm kiếm</button>
+<p id="result"></p>
+<script>
+    let arr = [];
+    for (i=0;i<=100;i++){
+        arr[i] = i;
+    }
+    function timKiem(array,result,number) {
+        while (number===result){
+            if (number===result){
+                alert("Bạn nhập đúng");
+            }
+            if (number>result){
+                array.splice(number,100-number);
+                alert("Quá cao.Bạn nên nhập từ 0 đến " + (number-1));
+            }
+            if (number<result){
+                alert("Quá thấp.Bạn nên nhập từ " + (number+1) + "đến 100");
+            }
+        }
+
+    }
+</script>
+
+</body>
+</html>

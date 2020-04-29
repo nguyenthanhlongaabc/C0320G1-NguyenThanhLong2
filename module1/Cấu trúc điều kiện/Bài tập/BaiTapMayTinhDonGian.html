@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text"id="ketQua">
+<br><br>
+<button onclick="nhap('1')">1</button>&nbsp;
+<button onclick="nhap('2')">2</button>&nbsp;
+<button onclick="nhap('3')">3</button>&nbsp;
+<button onclick="nhap('+')">+</button>&nbsp;
+<br>
+<br>
+<button onclick="nhap('4')">4</button>&nbsp;
+<button onclick="nhap('5')">5</button>&nbsp;
+<button onclick="nhap('6')">6</button>&nbsp;
+<button onclick="nhap('-')">-</button>&nbsp;
+<br>
+<br>
+<button onclick="nhap('7')">7</button>&nbsp;
+<button onclick="nhap('8')">8</button>&nbsp;
+<button onclick="nhap('9')">9</button>&nbsp;
+<button onclick="nhap('*')">*</button>&nbsp;
+<br>
+<br>
+<button onclick="xoaGiaTri('C')">C</button>&nbsp;
+<button onclick="nhap('0')">0</button>&nbsp;
+<button onclick="tinhToan('=')">=</button>&nbsp;
+<button onclick="nhap('/')">/</button>&nbsp;
+<script>
+let ketQua = document.getElementById("ketQua");
+function nhap(so) {
+    ketQua.value += so;
+}
+function tinhToan() {
+    ketQua.value = eval(ketQua.value);
+}
+function xoaGiaTri() {
+    ketQua.value = "";
+}
+
+</script>
+
+
+</body>
+</html>
