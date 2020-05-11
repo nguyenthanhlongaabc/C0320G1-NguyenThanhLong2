@@ -6,12 +6,19 @@
 </head>
 <body>
 <script>
-    let a = [3,7,5,4,2];
-    let b = parseInt(prompt("Nhập vào một số nguyên"));
-    if (a.indexOf(b)!==-1){
-        for (i=1,i<a.length,i++){
-
+    let array = [1, 2, 22, 21, 10, 11, 15, 14, 12, 9];
+    document.write(array.join(", "));
+    document.write("<br>");
+    let num = parseInt(prompt("Input a number: "));
+    let position = array.indexOf(num);
+    if (position !== -1) {
+        for (let index = position; index < array.length; index++) {
+            array[index] = array[index + 1];
         }
+        array[array.length - 1] = 0;
+        document.write(array.join(", "));
+    } else {
+        document.write(`${num} is not in the array.`);
     }
 </script>
 

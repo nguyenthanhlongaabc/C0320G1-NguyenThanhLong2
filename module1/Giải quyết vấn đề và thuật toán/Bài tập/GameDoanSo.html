@@ -5,31 +5,52 @@
     <title>Title</title>
 </head>
 <body>
-<h2>Game Đoán Số từ 0-100</h2>
-<input type="text" id="number">
-<button onclick="timKiem()">Tìm kiếm</button>
-<p id="result"></p>
+<script src="doan-so.js"></script>
 <script>
-    let arr = [];
-    for (i=0;i<=100;i++){
-        arr[i] = i;
-    }
-    function timKiem(array,result,number) {
-        while (number===result){
-            if (number===result){
-                alert("Bạn nhập đúng");
-            }
-            if (number>result){
-                array.splice(number,100-number);
-                alert("Quá cao.Bạn nên nhập từ 0 đến " + (number-1));
-            }
-            if (number<result){
-                alert("Quá thấp.Bạn nên nhập từ " + (number+1) + "đến 100");
-            }
+    function randomArrayNumber() {
+        const result = [];
+        for (let index = 0; index < 50; index++) {
+            result.push(Math.round(Math.random() * 100));
         }
-
+        return result;
     }
-</script>
 
+    function linearSearch(array, number) {
+        let loopTimes = 0;
+        for (let index = 0; index < array.length; index++) {
+            if (number === array[index]) {
+                return { index, loopTimes };
+            }
+            loopTimes++;
+        }
+        return { index: -1, loopTimes };
+    }
+
+    function binarySearch(sortedArray, number) {
+        let left = 0;
+        let right = sortedArray.length - 1;
+        let loopTimes = 0;
+        while (left <= right) {
+            const middle = Math.floor(left + (right - left) / 2);
+            if (sortedArray[middle] === number) {
+                return { index: middle, loopTimes };
+            }
+            if (sortedArray[middle] < number) {
+                left = middle + 1;
+            } else {
+                right = middle - 1;
+            }
+            loopTimes++;
+        }
+        return { index: -1, loopTimes };
+    }
+
+    let arrayNumber = randomArrayNumber();
+    console.log(`Random numbers: ${arrayNumber.join(", ")}`);
+    console.log(linearSearch(arrayNumber, 10));
+    arrayNumber = arrayNumber.sort();
+    console.log(`These numbers after sorted: ${arrayNumber.join(", ")}`);
+    console.log(binarySearch(arrayNumber, 10));
+</script>
 </body>
 </html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cau 2</title>
+</head>
+
+<body>
+    <script>
+        function isPerfectNumber(number) {
+            let sum = 0;
+            for (let i = 1; i < number; i++) {
+                if (number % i == 0) {
+                    sum += i;
+                }
+            }
+            return sum == number;
+        }
+        const number = parseInt(prompt("Nhap vao so nguyen duong"));
+        if (!Number.isInteger(number) || number <= 0) {
+            alert("Vui long nhap vao so nguyen duong");
+        } else {
+            document.write(`${number} : ${isPerfectNumber(number)}`);
+        } 
+    </script>
+</body>
+
+</html>

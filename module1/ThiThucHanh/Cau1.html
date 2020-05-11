@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = ["Toyota","Mercedes","Huyndai","Deawon"];
+    let str;
+    function findCard(nhap) {
+        nhap = prompt("Nhập vào một kí tự");
+        switch (nhap) {
+            case "T" : {
+                str = "Toyota";
+                break;
+            }
+            case "M" :{
+                str = "Mercedes";
+                break;
+            }
+            case "H" :{
+                str = "Huyndai";
+                break;
+            }
+            case "D" :{
+                str = "Deawon";
+                break;
+            }
+        }
+        for (i=0;i<array.length;i++){
+            if (str==array[i]){
+                alert(array[i]);
+                break;
+            }
+        }
+    }
+    findCard();
+</script>
+
+</body>
+</html>

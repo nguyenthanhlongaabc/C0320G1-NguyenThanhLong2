@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class NhanVien {
+        constructor(name,soNgayLam,luongCoBan) {
+            this.name = name;
+            this.soNgayLam = soNgayLam;
+            this.luongCoBan = luongCoBan;
+        }
+        getName() {
+            return alert(" Tên : " + this.name);
+        }
+        getLuong(){
+            return alert("Lương : " + this.soNgayLam*this.luongCoBan);
+        }
+    }
+    let nhanVien = new NhanVien("Nguyễn Văn A",20,200000);
+    nhanVien.getName();
+    nhanVien.getLuong();
+</script>
+
+</body>
+</html>
