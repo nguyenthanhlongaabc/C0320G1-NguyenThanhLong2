@@ -16,17 +16,17 @@ public class ThemPhanTuVaoMang {
                 System.out.print("Chỉ số phải nằm trong khoảng từ 0-9. Vui lòng nhập lại");
             }
         } while (index < 0 || index > 9);
-        int[] newArray = new int[array.length+1];
-        for (int i = 0; i < index ; i++){
-            newArray[i] = array[i];
+        int[] array1 = new int[array.length+1];
+        for (int i = 0; i<index ; i++){
+            array1[i] = array[i];
         }
-        newArray[index] = number;
-        for (int i = index+1; i < array.length ; i++){
-            newArray[i] = array[i-1];
+        array1[index] = number;
+        for (int i = index+1; i< array1.length; i++){
+            array1[i]=array[i-1];
         }
         System.out.println("Các phần tử trong mảng sau khi thêm là : ");
-        for (int i = 0; i < newArray.length; i++) {
-            System.out.print(newArray[i] + " ");
+        for (int i = 0; i < array1.length; i++) {
+            System.out.print(array1[i] + " ");
         }
     }
 }
