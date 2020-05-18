@@ -22,16 +22,6 @@ public class Square extends Rectangle {
     }
 
     @Override
-    public void setWidth(double width){
-        setSize(width);
-    }
-
-    @Override
-    public void setLength(double length){
-        setSize(length);
-    }
-
-    @Override
     public String toString() {
         return "A Square with side="
                 + getSize()
