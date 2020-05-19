@@ -1,4 +1,4 @@
-package AdvancedObjectOrientedDesign.ThucHanh.Fruit;
+package AdvancedObjectOrientedDesign.ThucHanh.animal_and_interface.Fruit;
 
 public class Orange extends Fruit {
     @Override

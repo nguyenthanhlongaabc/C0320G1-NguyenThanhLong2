@@ -1,12 +1,12 @@
-package AdvancedObjectOrientedDesign.ThucHanh;
+package AdvancedObjectOrientedDesign.ThucHanh.animal_and_interface;
 
-import AdvancedObjectOrientedDesign.ThucHanh.Animal.Animal;
-import AdvancedObjectOrientedDesign.ThucHanh.Animal.Chicken;
-import AdvancedObjectOrientedDesign.ThucHanh.Animal.Tiger;
-import AdvancedObjectOrientedDesign.ThucHanh.Edible.Edible;
-import AdvancedObjectOrientedDesign.ThucHanh.Fruit.Apple;
-import AdvancedObjectOrientedDesign.ThucHanh.Fruit.Fruit;
-import AdvancedObjectOrientedDesign.ThucHanh.Fruit.Orange;
+import AdvancedObjectOrientedDesign.ThucHanh.animal_and_interface.animal.Animal;
+import AdvancedObjectOrientedDesign.ThucHanh.animal_and_interface.animal.Chicken;
+import AdvancedObjectOrientedDesign.ThucHanh.animal_and_interface.animal.Tiger;
+import AdvancedObjectOrientedDesign.ThucHanh.animal_and_interface.Edible.*;
+import AdvancedObjectOrientedDesign.ThucHanh.animal_and_interface.Fruit.Apple;
+import AdvancedObjectOrientedDesign.ThucHanh.animal_and_interface.Fruit.Fruit;
+import AdvancedObjectOrientedDesign.ThucHanh.animal_and_interface.Fruit.Orange;
 
 public class AbstractAndInterfaceTests {
     public static void main(String[] args) {

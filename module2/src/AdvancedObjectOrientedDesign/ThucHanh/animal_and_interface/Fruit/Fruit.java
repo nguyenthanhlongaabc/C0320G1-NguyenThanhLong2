@@ -1,4 +1,4 @@
-package AdvancedObjectOrientedDesign.ThucHanh.Fruit;
+package AdvancedObjectOrientedDesign.ThucHanh.animal_and_interface.Fruit;
 
 import AdvancedObjectOrientedDesign.ThucHanh.Edible.Edible;
 
