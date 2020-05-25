@@ -3,7 +3,6 @@ package AdvancedObjectOrientedDesign.ThucHanh.animal_and_interface;
 import AdvancedObjectOrientedDesign.ThucHanh.animal_and_interface.animal.Animal;
 import AdvancedObjectOrientedDesign.ThucHanh.animal_and_interface.animal.Chicken;
 import AdvancedObjectOrientedDesign.ThucHanh.animal_and_interface.animal.Tiger;
-import AdvancedObjectOrientedDesign.ThucHanh.animal_and_interface.Edible.*;
 import AdvancedObjectOrientedDesign.ThucHanh.animal_and_interface.Fruit.Apple;
 import AdvancedObjectOrientedDesign.ThucHanh.animal_and_interface.Fruit.Fruit;
 import AdvancedObjectOrientedDesign.ThucHanh.animal_and_interface.Fruit.Orange;

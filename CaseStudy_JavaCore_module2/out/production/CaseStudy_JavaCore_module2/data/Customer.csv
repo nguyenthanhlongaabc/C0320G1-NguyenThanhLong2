@@ -1,0 +1,3 @@
+idCus, nameCustomer, birthday, gender, cmnd, phoneNumber, email, typeCustomer, address
+1,Long,12/12/2000,Male,123412341,123123123,Long@gmail.com,Long,Long
+2,Long1,12/12/2000,Male,123412341,123123123,Long@gmail.com,Long,Long

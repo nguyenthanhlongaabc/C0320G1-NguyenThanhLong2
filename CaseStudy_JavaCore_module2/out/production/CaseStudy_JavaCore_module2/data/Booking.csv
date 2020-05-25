@@ -1,0 +1,2 @@
+idCus, nameCustomer, birthday, gender, cmnd, phoneNumber, email, typeCustomer, address, id, nameService, areaUse, rentalCosts, maxNumberOfPeople, typeRent 
+1,Long,12/12/2000,Male,123412341,123123123,Long@gmail.com,Long,Long,SVVL-1235,Villa5,50.0,50.0,10,Long
