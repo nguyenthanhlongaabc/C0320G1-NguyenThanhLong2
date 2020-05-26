@@ -21,7 +21,9 @@ public class MainController {
         System.out.println("4. Show information of customer");
         System.out.println("5. Add new booking");
         System.out.println("6. Show information of employee");
-        System.out.println("7. Exit");
+        System.out.println("7. Add booking Cinema 4D");
+        System.out.println("8. Find employee file");
+        System.out.println("9. Exit");
         System.out.println();
         System.out.println("Enter your choice: ");
         choice = Integer.parseInt(input.nextLine());
@@ -48,10 +50,22 @@ public class MainController {
             }
             case 6: {
                 showInformationEmployee();
+                break;
             }
-//            case 7: {
-//                System.exit(0);
-//            }
+            case 7: {
+                addBookingCinema();
+                break;
+            }
+            case 8: {
+                findEmployeeFile();
+                break;
+            }
+            case 9: {
+                System.exit(0);
+            }
+            default: {
+                displayMainMenu();
+            }
         }
     }
 
@@ -421,6 +435,47 @@ public class MainController {
             System.out.println(employee);
             System.out.println("------------------------");
         }
+    }
+
+    private void addBookingCinema(){
+        int size = 5;
+        System.out.println("Furama has all 5 tickets");
+        Queue<String> queue = new ArrayDeque<>();
+        for (int i = 0; i < size; i++){
+            System.out.println("Enter name " + (i+1) + ":");
+            String name = input.nextLine();
+            queue.add(name);
+        }
+        System.out.println("Tickets are out !!. Seat list: ");
+        System.out.println(queue);
+        displayMainMenu();
+    }
+
+    private void findEmployeeFile(){
+        Stack<EmployeeFile> employeeFiles = new Stack<EmployeeFile>();
+        employeeFiles.push(new EmployeeFile("Long","18 years old"));
+        employeeFiles.push(new EmployeeFile("An","19 years old"));
+        employeeFiles.push(new EmployeeFile("Bach","20 years old"));
+        employeeFiles.push(new EmployeeFile("Toan","21 years old"));
+
+        System.out.println();
+        System.out.print("Enter employee's name: ");
+        String name = input.nextLine();
+        boolean found = false;
+        while (!employeeFiles.isEmpty()) {
+            EmployeeFile employeeFile = employeeFiles.pop();
+            System.out.println("Pop file of " + employeeFile.getName());
+            if (employeeFile.getName().equals(name)) {
+                System.out.println("Found!");
+                System.out.println("Description: " + employeeFile.getDescription());
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            System.out.println("Can't find employee " + name);
+        }
+        displayMainMenu();
     }
 
     public static void main(String[] args) {

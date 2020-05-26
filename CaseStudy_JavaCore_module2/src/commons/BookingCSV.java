@@ -11,13 +11,13 @@ public class BookingCSV {
     private static final String COMMA_DELIMITER = ",";
     private static final String NEW_LINE_SEPARATOR = "\n";
     private static final String fileNameBooking = "src/data/Booking.csv";
-    private static final String FILE_HEADER_BOOKING = "idCus, nameCustomer, birthday, gender, cmnd, phoneNumber, email, typeCustomer, address, id, nameService, areaUse, rentalCosts, maxNumberOfPeople, typeRent ";
+//    private static final String FILE_HEADER_BOOKING = "idCus, nameCustomer, birthday, gender, cmnd, phoneNumber, email, typeCustomer, address, id, nameService, areaUse, rentalCosts, maxNumberOfPeople, typeRent ";
     public static void writeBookingToFileCSV(ArrayList<Customer> ListBooking){
         FileWriter fileWriter = null;
         try {
-            fileWriter = new FileWriter(fileNameBooking);
-            fileWriter.append(FILE_HEADER_BOOKING);
-            fileWriter.append(NEW_LINE_SEPARATOR);
+            fileWriter = new FileWriter(fileNameBooking,true);
+//            fileWriter.append(FILE_HEADER_BOOKING);
+//            fileWriter.append(NEW_LINE_SEPARATOR);
             for (Customer customer: ListBooking){
                 fileWriter.append(customer.getIdCus());
                 fileWriter.append(COMMA_DELIMITER);
