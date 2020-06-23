@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0a094a87-a83b-4b77-866c-3d7cb97a3f85" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../CaseStudy_JavaCore_module2/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverter/CurrencyConverter.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterJSP/CurrencyConverterJSP.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProductDiscountCalculator/ProductDiscountCalculator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShowCustomer/ShowCustomer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../caculator/caculator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-thymeleaf/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-thymeleaf/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-thymeleaf/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-thymeleaf/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-thymeleaf/customer-thymeleaf.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-thymeleaf/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-thymeleaf/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customer-thymeleaf/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-product/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-product/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-product/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-product/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-product/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-product/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-product/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-product/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_web_mvc/java_web_mvc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan-li-khach-hang/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan-li-khach-hang/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan-li-khach-hang/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan-li-khach-hang/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan-li-khach-hang/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan-li-khach-hang/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan-li-khach-hang/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan-li-khach-hang/src/main/java/com/customer/democustomer/DemoCustomerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan-li-khach-hang/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quan-li-khach-hang/src/test/java/com/customer/democustomer/DemoCustomerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../simple_dictionary/simple_dictionary.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../simple_dictionary_jsp/simple_dictionary_jsp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-greeting/spring-greeting.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-greeting/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-greeting/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../string_controller_login/string_controller_login.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../string_controller_login/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../string_controller_login/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testSpringMaven/testSpringMaven.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled1/untitled1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy_JavaCore_module2/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy_JavaCore_module2/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy_JavaCore_module2/.idea/dictionaries/DELL.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy_JavaCore_module2/out/production/CaseStudy_JavaCore_module2/data/Booking.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy_JavaCore_module2/out/production/CaseStudy_JavaCore_module2/data/Booking.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy_JavaCore_module2/out/production/CaseStudy_JavaCore_module2/data/Villa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy_JavaCore_module2/out/production/CaseStudy_JavaCore_module2/data/Villa.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy_JavaCore_module2/src/data/Villa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy_JavaCore_module2/src/data/Villa.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/out/production/module2/CauTrucDuLieuVaGiaiThuatCoBan/BaiTap/TrienKhaiCacPhuongThucCuaArrayList/MyList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/out/production/module2/CauTrucDuLieuVaGiaiThuatCoBan/BaiTap/TrienKhaiCacPhuongThucCuaArrayList/MyList.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1dP8mfIEv9Nijx38KloL9QX9wZc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\C0320G1_NguyenThanhLong\module2_JavaWeb\demo\src\main\java\com\example\demo" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a094a87-a83b-4b77-866c-3d7cb97a3f85" name="Default Changelist" comment="" />
+      <created>1592315546092</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592315546092</updated>
+      <workItem from="1592315578688" duration="198000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1592315605347">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1592315605347" />
+  </component>
+</project>

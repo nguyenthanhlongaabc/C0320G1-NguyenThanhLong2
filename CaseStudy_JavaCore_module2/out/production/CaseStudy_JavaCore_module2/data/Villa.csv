@@ -1,6 +1,7 @@
 id, nameService, areaUse, rentalCosts, maxNumberOfPeople, typeRent, roomStandard, convenientDescription, areaPool, numberOfFloors
-SVVL-1231,Villa1,50.0,50.0,10,Long,Long,Long,50.0,10
-SVVL-1232,Villa2,50.0,50.0,10,Long,Long,Long,50.0,10
-SVVL-1233,Villa3,50.0,50.0,10,Long,Long,Long,50.0,10
-SVVL-1234,Villa4,50.0,50.0,10,Long,Long,Long,50.0,10
-SVVL-1235,Villa5,50.0,50.0,10,Long,Long,Long,50.0,10
+SVVL-1231,villa1,50.0,50.0,10,Long,Long,Long,50.0,10
+SVVL-1232,villa2,50.0,50.0,10,Long,Long,Long,50.0,10
+SVVL-1233,villa2,50.0,50.0,10,Long,Long,Long,50.0,10
+SVVL-1234,villa4,50.0,50.0,10,Long,Long,Long,50.0,10
+SVVL-1234,ailla4,50.0,50.0,10,Long,Long,Long,50.0,10
+SVVL-1235,villa5,50.0,50.0,10,Long,Long,Long,50.0,10
