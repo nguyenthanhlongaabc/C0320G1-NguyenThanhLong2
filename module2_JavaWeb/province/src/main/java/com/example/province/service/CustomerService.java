@@ -11,4 +11,5 @@ public interface CustomerService {
     Customer getCustomerById(Long id);
 
     Page<Customer> getAllCustomer(Pageable pageable);
+    Page<Customer> getAllCustomerByName(String search, Pageable pageable);
 }

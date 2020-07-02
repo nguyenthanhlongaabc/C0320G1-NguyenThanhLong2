@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Contract</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <style>
+        #createForm{
+            max-width: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="customer-menu">
+    <a class="btn btn-primary" role="button" href="/admin/contract">Back to contract list</a>
+</div>
+<form id="createForm" action="/contract/create" method="post" th:object="${contract}">
+    <div class="form-group">
+        <label>Start Date</label>
+        <input type="date" class="form-control" th:field="*{startDate}" placeholder="Enter start date">
+        <p class="text-warning" th:if="${#fields.hasErrors('startDate')}" th:errors="*{startDate}"></p>
+    </div>
+    <div class="form-group">
+        <label>End Date</label>
+        <input type="date" class="form-control" th:field="*{endDate}" placeholder="Enter end date">
+        <p class="text-warning" th:if="${#fields.hasErrors('endDate')}" th:errors="*{endDate}"></p>
+    </div>
+    <div class="form-group">
+        <label>Down payment</label>
+        <input type="text" class="form-control" th:field="*{downPayment}" placeholder="Enter down payment">
+        <p class="text-warning" th:if="${#fields.hasErrors('downPayment')}" th:errors="*{downPayment}"></p>
+    </div>
+    <div class="form-group">
+        <label>Total Money</label>
+        <input type="text" class="form-control" th:field="*{totalMoney}" placeholder="Enter total money">
+        <p class="text-warning" th:if="${#fields.hasErrors('totalMoney')}" th:errors="*{totalMoney}"></p>
+    </div>
+    <div class="form-group">
+        <label>Customer</label>
+        <select class="form-control" name="customerId">
+            <option th:each="ct : ${customers}" th:value="${ct.id}" th:text="${ct.name}"></option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Service</label>
+        <select class="form-control" name="serviceId">
+            <option th:each="ct : ${services}" th:value="${ct.id}" th:text="${ct.serviceName}"></option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Create new contract</button>
+</form>
+<script src="/js/jquery-3.5.1.slim.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

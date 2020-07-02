@@ -5,15 +5,17 @@
     <title>Create Customer</title>
 </head>
 <body>
-<form th:method="post" action="/create" th:object="${customers}">
-    <table>
+<form th:method="post" action="/create" th:object="${customer}">
+    <table border="1">
         <tr>
             <td>Name</td>
             <td><input th:field="*{name}"></td>
+            <td th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</td>
         </tr>
         <tr>
             <td>Age</td>
             <td><input th:field="*{age}"></td>
+            <td th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Name Error</td>
         </tr>
         <tr>
             <td>Birthday</td>

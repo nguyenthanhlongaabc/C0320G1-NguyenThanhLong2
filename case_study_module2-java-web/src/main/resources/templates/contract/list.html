@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List Contract</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+<div class="customer-menu">
+    <a class="btn btn-primary" role="button" href="/contract/create">New Contract</a>
+</div>
+<h3 th:text="${message}"></h3>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Down Payment</th>
+        <th>Total Money</th>
+        <th>Customer</th>
+        <th>Service</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="contract, iterstats: ${contracts}">
+        <td scope="row" th:text="${iterstats.count}"></td>
+        <td th:text="${#dates.format(contract.startDate, 'dd/MM/yyyy')}"></td>
+        <td th:text="${#dates.format(contract.endDate, 'dd/MM/yyyy')}"></td>
+        <td th:text="${contract.downPayment}"></td>
+        <td th:text="${contract.totalMoney}"></td>
+        <td th:text="${contract.customer.name}"></td>
+        <td th:text="${contract.service.serviceName}"></td>
+    </tr>
+    </tbody>
+</table>
+<script src="/js/jquery-3.5.1.slim.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

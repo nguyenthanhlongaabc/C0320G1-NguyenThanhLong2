@@ -11,7 +11,7 @@
 <p th:text="${message}"></p>
 <form>
     <label>Search: </label>
-    <input type="text" name="search">
+    <input type="text" name="search" th:value="${search}">
     <input type="submit" value="Search">
 </form>
 <table class="table table-striped">
@@ -38,9 +38,9 @@
     </tbody>
 </table>
 <div>
-    <a th:href="@{'/'(page=${blogs.number})}" th:if="${blogs.hasPrevious()}">Previous</a>
+    <a th:href="@{'/'(page=${blogs.number},search=${search})}" th:if="${blogs.hasPrevious()}">Previous</a>
     <span th:text="${blogs.number + 1}"></span>/<span th:text="${blogs.totalPages}"></span>
-    <a th:href="@{'/'(page=${blogs.number + 2})}" th:if="${blogs.hasNext()}">Next</a>
+    <a th:href="@{'/'(page=${blogs.number + 2},search=${search})}" th:if="${blogs.hasNext()}">Next</a>
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

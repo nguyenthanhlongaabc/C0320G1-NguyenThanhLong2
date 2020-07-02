@@ -6,11 +6,10 @@ import javax.validation.constraints.Size;
 
 public class User {
 
-    @NotEmpty
-    @Size(min = 2, max = 30)
+    @Size(min = 2, max = 30, message = "tên nằm trong khoảng từ 2-30 kí tự")
     private String name;
 
-    @Min(18)
+    @Min(value = 18, message = "tuổi phải lớn hơn 18")
     private int age;
 
     public String getName() {

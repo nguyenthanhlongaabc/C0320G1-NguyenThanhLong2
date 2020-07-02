@@ -32,4 +32,9 @@ public class CustomerImpl implements CustomerService {
         return customerRepository.findAll(pageable);
     }
 
+    @Override
+    public Page<Customer> getAllCustomerByName(String search, Pageable pageable) {
+        return customerRepository.findAllByNameContaining(search,pageable);
+    }
+
 }

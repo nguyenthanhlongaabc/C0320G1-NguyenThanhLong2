@@ -2,6 +2,8 @@ package com.example.province.entity;
 
 
 import javax.persistence.*;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.Size;
 import java.sql.Date;
 
 @Entity
@@ -10,9 +12,15 @@ public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Size(min = 2, max = 30, message = "Tên từ 2-30 kí tự")
     private String name;
+
+    @Min(value = 18, message = "tuổi từ 18 tuổi trở lên")
     private Integer age;
+
     private Date birthday;
+
     private String address;
 
     public Long getId() {

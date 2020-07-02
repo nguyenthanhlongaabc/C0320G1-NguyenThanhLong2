@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Service</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <style>
+        #createForm{
+            max-width: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+<div class="customer-menu">
+    <a class="btn btn-primary" role="button" href="/admin/service">Back to Service list</a>
+</div>
+<form id="createForm" action="/service/create" method="post" th:object="${service}">
+    <div class="form-group">
+        <label>Service Code</label>
+        <input type="text" class="form-control" th:field="*{serviceCode}" placeholder="Enter Service code">
+        <p class="text-warning" th:if="${#fields.hasErrors('serviceCode')}" th:errors="*{serviceCode}"></p>
+    </div>
+    <div class="form-group">
+        <label>Service Name</label>
+        <input type="text" class="form-control" th:field="*{serviceName}" placeholder="Enter Service name">
+    </div>
+    <div class="form-group">
+        <label>Area</label>
+        <input type="text" class="form-control" th:field="*{area}" placeholder="Enter area">
+    </div>
+    <div class="form-group">
+        <label>Number Of Floors</label>
+        <input type="text" class="form-control" th:field="*{numberOfFloors}" placeholder="Enter number of floors">
+        <p class="text-warning" th:if="${#fields.hasErrors('numberOfFloors')}" th:errors="*{numberOfFloors}"></p>
+    </div>
+    <div class="form-group">
+        <label>Max Number Of People</label>
+        <input type="text" class="form-control" th:field="*{maxNumberOfPeople}" placeholder="Enter number of floors">
+        <p class="text-warning" th:if="${#fields.hasErrors('maxNumberOfPeople')}" th:errors="*{maxNumberOfPeople}"></p>
+    </div>
+    <div class="form-group">
+        <label>Rental Costs</label>
+        <input type="text" class="form-control" th:field="*{rentalCosts}" placeholder="Enter rental costs">
+    </div>
+    <div class="form-group">
+        <label>Status</label>
+        <input type="text" class="form-control" th:field="*{status}" placeholder="Enter status">
+    </div>
+    <button type="submit" class="btn btn-primary">Create new service</button>
+</form>
+<body>
+<script src="/js/jquery-3.5.1.slim.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
