@@ -1,0 +1,41 @@
+#head{
+    height: 200px;
+    width: 100%;
+    background: antiquewhite;
+    margin-bottom: 5px;
+}
+#head_link{
+    height: 60px;
+    width: 100%;
+    background: aquamarine;
+    margin-bottom: 5px;
+}
+#left{
+    height: 700px;
+    width: 17%;
+    background: chartreuse;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    float: left;
+}
+#content{
+    height: 700px;
+    width: 60%;
+    background: chocolate;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    float: left;
+}
+#right{
+    height: 700px;
+    width: 22.4%;
+    background: crimson;
+    margin-bottom: 5px;
+    float: left;
+}
+#footer{
+    height: 100px;
+    width: 100%;
+    background: darkorange;
+    clear: both;
+}

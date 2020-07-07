@@ -1,0 +1,31 @@
+#header{
+    height: 200px;
+    width: 100%;
+    background: antiquewhite;
+}
+
+#mid{
+    height: 50px;
+    width: 100%;
+    background: aquamarine;
+}
+#left{
+    height: 700px;
+    width: 20%;
+    background: cornflowerblue;
+    float: left;
+}
+#right{
+    height: 700px;
+    width: 80%;
+    background: aliceblue;
+    float: left;
+}
+#header img{
+    border-radius: 50%;
+    height: 150px;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+#

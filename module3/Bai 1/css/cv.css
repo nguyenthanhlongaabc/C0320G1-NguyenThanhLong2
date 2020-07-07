@@ -1,0 +1,38 @@
+.left{
+    height: 1000px;
+    width: 40%;
+    float: left;
+    background: cornflowerblue;
+}
+.right{
+    border: 5px solid gray;
+    height: 1000px;
+    width: 59.4%;
+    float: left;
+    background: antiquewhite;
+}
+.left img{
+    height: 300px;
+    width: 50%;
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+.info h2{
+    text-align: center;
+    color: aliceblue;
+}
+.info p{
+    margin-left: 210px;
+    color: aliceblue;
+    max-width: 260px;
+}
+.right h2{
+    text-align: center;
+    line-height: 200px;
+}
+.right p{
+    margin-left: 390px;
+}
