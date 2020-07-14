@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .nav-item{
+            margin-left: 20px;
+        }
+        .container{
+            background: aquamarine;
+            font-size: 1px;
+            margin-top: 30px;
+        }
+        .container a{
+            font-size: 30px;
+        }
+        .container p{
+            font-size: 15px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand text-info" href="#">JQuery</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <button type="button" class="btn btn-danger " style="margin-left: 100px">
+                Plugins
+            </button>
+            <button type="button" class="btn btn-info " style="margin-left: 20px">
+                Contribute
+            </button>
+            <button type="button" class="btn btn-warning" style="margin-left: 20px">Events</button>
+            <li class="nav-item dropdown">
+                <button class="btn btn-success dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Support
+                </button>
+                <button class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Learning Center</a>
+                    <a class="dropdown-item" href="#">IRC/Chat</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Forums</a>
+                </button>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <a href="https://api.jquery.com/find/#find-selector">find()</a>
+            <p>Description: Get the descendants of each element in the current set of matched elements, filtered by a selector, jQuery object, or element.</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <a href="https://api.jquery.com/hide/#hide">hide()</a>
+            <p>Description: Hide the matched elements.</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <a href="https://api.jquery.com/toggle/#toggle-duration-complete">toggle()</a>
+            <p>Description: Display or hide the matched elements.</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <a href="https://api.jquery.com/show/">show()</a>
+            <p>Description: Display the matched elements.</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <a href="https://api.jquery.com/animate/#animate-properties-duration-easing-complete">animate()</a>
+            <p>Description: Perform a custom animation of a set of CSS properties.</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <a href="https://api.jquery.com/fadeIn/#fadeIn-duration-complete">fadeIn()</a>
+            <p>Description: Display the matched elements by fading them to opaque.</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <a href="https://api.jquery.com/fadeOut/#fadeOut-duration-complete">fadeOut()</a>
+            <p>Description: Hide the matched elements by fading them to transparent.</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <a href="https://api.jquery.com/slideUp/#slideUp-duration-complete">slideUp()</a>
+            <p>Description: Hide the matched elements with a sliding motion.</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <a href="https://api.jquery.com/slideDown/#slideDown-duration-complete">slideDown()</a>
+            <p>Description: Display the matched elements with a sliding motion.</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <a href="https://api.jquery.com/html/#html">html()</a>
+            <p>Description: Get the HTML contents of the first element in the set of matched elements.</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <a href="https://api.jquery.com/append/#append-content-content">append()</a>
+            <p>Description: Insert content, specified by the parameter, to the end of each element in the set of matched elements.</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <a href="https://api.jquery.com/prepend/#prepend-content-content">prepend()</a>
+            <p>Description: Insert content, specified by the parameter, to the beginning of each element in the set of matched elements.</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <a href="https://api.jquery.com/on/#on-events-selector-data-handler">on()</a>
+            <p>Description: Attach an event handler function for one or more events to the selected elements.</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <a href="https://api.jquery.com/off/#off-events-selector-handler">off()</a>
+            <p>Description: Remove an event handler.</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <a href="https://api.jquery.com/css/#css-propertyName">css()</a>
+            <p>Description: Get the computed style properties for the first element in the set of matched elements.</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <a href="https://api.jquery.com/jQuery.cssHooks/#jQuery-cssHooks1">attr()</a>
+            <p>Description: Get the value of an attribute for the first element in the set of matched elements.</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <a href="https://api.jquery.com/val/#val">val()</a>
+            <p>Description: Get the current value of the first element in the set of matched elements.</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <a href="https://api.jquery.com/text/#text">text()</a>
+            <p>Description: Get the combined text contents of each element in the set of matched elements, including their descendants.</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <a href="https://api.jquery.com/each/#each-function">each()</a>
+            <p>Description: Iterate over a jQuery object, executing a function for each matched element.</p>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
