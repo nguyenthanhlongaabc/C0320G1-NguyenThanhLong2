@@ -8,7 +8,7 @@ interface IRatingUnit {
 @Component({
   selector: 'app-rating-bar',
   templateUrl: './rating-bar.component.html',
-  styleUrls: ['./rating-bar.component.scss']
+  styleUrls: ['./rating-bar.component.css']
 })
 export class RatingBarComponent implements OnInit, OnChanges {
   @Input()
